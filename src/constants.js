@@ -1,4 +1,4 @@
-const feetToInches = (feets, inches = 0) => {
+export const feetToInches = (feets, inches = 0) => {
   return feets * 12 + inches;
 };
 
