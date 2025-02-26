@@ -9,3 +9,7 @@ export const d = feetToInches(34, 9);
 
 export const origin = 1;
 export const outerWallThickness = feetToInches(1);
+
+export const outerSpace = feetToInches(3, 0);
+
+export const carSpace = feetToInches(15, 0);

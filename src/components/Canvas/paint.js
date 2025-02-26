@@ -1,5 +1,6 @@
 import {  feetToInches } from "../../constants";
-import { createOutline, createInline } from "./utils";
+import { groundFloor } from "./floors/groundFloor";
+import { createOutline, fillRect } from "./utils";
 
 export const paint = (canvasDom) => {
   canvasDom.width = feetToInches(50);
@@ -7,5 +8,8 @@ export const paint = (canvasDom) => {
   const ctx = canvasDom.getContext("2d");
   
   createOutline(ctx);
-  createInline(ctx);
+  // createInline(ctx);
+  fillRect(ctx);
+
+  groundFloor(ctx);
 };

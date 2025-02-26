@@ -12,6 +12,13 @@ export const createOutline = (ctx) => {
   ctx.fill();
 }
 
+export const fillRect = (ctx) => {
+    ctx.fillStyle = 'white';
+  ctx.fillRect(origin, origin, c, b);
+  ctx.strokeStyle = 'black';
+  ctx.stroke();
+}
+
 export const createInline = (ctx) => {
     ctx.beginPath();
     
